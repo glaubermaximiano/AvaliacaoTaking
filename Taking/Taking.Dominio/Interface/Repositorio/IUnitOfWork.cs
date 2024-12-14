@@ -6,5 +6,7 @@ namespace Taking.Dominio.Interface.Repositorio
         string StrConexao { set; get; }
 
         IClienteRepositorio Cliente { get; }
+
+        IFilialRepositorio Filial { get; }
     }
 }

@@ -78,5 +78,85 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.FilialController",
+    "Method": "ListaTodos",
+    "RelativePath": "api/AvaliacaoTaking/filial",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idcSituacao",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.FilialController",
+    "Method": "Add",
+    "RelativePath": "api/AvaliacaoTaking/filial",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "Taking.Dominio.Entidade.FilialDominio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.FilialController",
+    "Method": "Update",
+    "RelativePath": "api/AvaliacaoTaking/filial",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "Taking.Dominio.Entidade.FilialDominio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.FilialController",
+    "Method": "BuscaPorId",
+    "RelativePath": "api/AvaliacaoTaking/filial/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.FilialController",
+    "Method": "Remove",
+    "RelativePath": "api/AvaliacaoTaking/filial/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

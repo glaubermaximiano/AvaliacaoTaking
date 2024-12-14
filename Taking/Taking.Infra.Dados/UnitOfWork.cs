@@ -22,5 +22,19 @@ namespace Taking.Infra.Dados
                 return _cliente;
             }
         }
+
+        IFilialRepositorio _filial;
+        public IFilialRepositorio Filial
+        {
+            get
+            {
+                if (_filial == null)
+                {
+                    _filial = new FilialRepositorio(this.StrConexao);
+                }
+
+                return _filial;
+            }
+        }
     }
 }

@@ -16,7 +16,7 @@ create table cliente
 
 create table filial
  (num_filial int not null GENERATED ALWAYS AS IDENTITY,
-  nom_filial varchar(1) not null,
+  nom_filial varchar(100) not null,
   idc_situacao char(1) not null,
   constraint pk_filial primary key (num_filial),
   constraint ck1_filial check (idc_situacao = 'A' or idc_situacao = 'I'));
