@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "OTmnW/JBXxY=",
+  "success": true,
+  "projectFilePath": "G:\\AvaliacaoTaking\\Taking\\Taking.Infra.IOC\\Taking.Infra.IOC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\glaub\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
+    "C:\\Users\\glaub\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\glaub\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\glaub\\.nuget\\packages\\nlog\\5.3.4\\nlog.5.3.4.nupkg.sha512",
+    "C:\\Users\\glaub\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

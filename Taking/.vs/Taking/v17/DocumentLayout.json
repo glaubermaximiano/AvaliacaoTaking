@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\AvaliacaoTaking\\Taking\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9ED5AB21-C611-4DB8-AC54-EBBA9203D9B5}|Taking.Aplicacao.Teste\\Taking.Aplicacao.Teste.csproj|g:\\avaliacaotaking\\taking\\taking.aplicacao.teste\\clienteteste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ED5AB21-C611-4DB8-AC54-EBBA9203D9B5}|Taking.Aplicacao.Teste\\Taking.Aplicacao.Teste.csproj|solutionrelative:taking.aplicacao.teste\\clienteteste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD2112D-35AF-4848-8607-8B60B95CD20A}|Taking.Aplicacao\\Taking.Aplicacao.csproj|g:\\avaliacaotaking\\taking\\taking.aplicacao\\servico\\clienteappservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCD2112D-35AF-4848-8607-8B60B95CD20A}|Taking.Aplicacao\\Taking.Aplicacao.csproj|solutionrelative:taking.aplicacao\\servico\\clienteappservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD2112D-35AF-4848-8607-8B60B95CD20A}|Taking.Aplicacao\\Taking.Aplicacao.csproj|g:\\avaliacaotaking\\taking\\taking.aplicacao\\taking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCD2112D-35AF-4848-8607-8B60B95CD20A}|Taking.Aplicacao\\Taking.Aplicacao.csproj|solutionrelative:taking.aplicacao\\taking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 18,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClienteTeste.cs",
+              "DocumentMoniker": "G:\\AvaliacaoTaking\\Taking\\Taking.Aplicacao.Teste\\ClienteTeste.cs",
+              "RelativeDocumentMoniker": "Taking.Aplicacao.Teste\\ClienteTeste.cs",
+              "ToolTip": "G:\\AvaliacaoTaking\\Taking\\Taking.Aplicacao.Teste\\ClienteTeste.cs",
+              "RelativeToolTip": "Taking.Aplicacao.Teste\\ClienteTeste.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAJAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T12:36:41.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClienteAppServico.cs",
+              "DocumentMoniker": "G:\\AvaliacaoTaking\\Taking\\Taking.Aplicacao\\Servico\\ClienteAppServico.cs",
+              "RelativeDocumentMoniker": "Taking.Aplicacao\\Servico\\ClienteAppServico.cs",
+              "ToolTip": "G:\\AvaliacaoTaking\\Taking\\Taking.Aplicacao\\Servico\\ClienteAppServico.cs",
+              "RelativeToolTip": "Taking.Aplicacao\\Servico\\ClienteAppServico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T12:35:01.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Taking.cs",
+              "DocumentMoniker": "G:\\AvaliacaoTaking\\Taking\\Taking.Aplicacao\\Taking.cs",
+              "RelativeDocumentMoniker": "Taking.Aplicacao\\Taking.cs",
+              "ToolTip": "G:\\AvaliacaoTaking\\Taking\\Taking.Aplicacao\\Taking.cs",
+              "RelativeToolTip": "Taking.Aplicacao\\Taking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T12:34:51.546Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

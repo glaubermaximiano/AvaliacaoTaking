@@ -1,0 +1,16 @@
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\bin\Debug\net8.0\Taking.Infra.Dados.deps.json
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\bin\Debug\net8.0\Taking.Infra.Dados.dll
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\bin\Debug\net8.0\Taking.Infra.Dados.pdb
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\bin\Debug\net8.0\Taking.Dominio.dll
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\bin\Debug\net8.0\Taking.Dominio.pdb
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\obj\Debug\net8.0\Taking.Infra.Dados.csproj.AssemblyReference.cache
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\obj\Debug\net8.0\Taking.Infra.Dados.GeneratedMSBuildEditorConfig.editorconfig
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\obj\Debug\net8.0\Taking.Infra.Dados.AssemblyInfoInputs.cache
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\obj\Debug\net8.0\Taking.Infra.Dados.AssemblyInfo.cs
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\obj\Debug\net8.0\Taking.Infra.Dados.csproj.CoreCompileInputs.cache
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\obj\Debug\net8.0\Taking.Infra.Dados.sourcelink.json
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\obj\Debug\net8.0\Taking.I.C5D04A29.Up2Date
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\obj\Debug\net8.0\Taking.Infra.Dados.dll
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\obj\Debug\net8.0\refint\Taking.Infra.Dados.dll
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\obj\Debug\net8.0\Taking.Infra.Dados.pdb
+G:\AvaliacaoTaking\Taking\Taking.Infra.Dados\obj\Debug\net8.0\ref\Taking.Infra.Dados.dll

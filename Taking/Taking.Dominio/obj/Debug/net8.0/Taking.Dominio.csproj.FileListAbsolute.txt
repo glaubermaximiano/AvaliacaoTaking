@@ -1,0 +1,12 @@
+G:\AvaliacaoTaking\Taking\Taking.Dominio\bin\Debug\net8.0\Taking.Dominio.deps.json
+G:\AvaliacaoTaking\Taking\Taking.Dominio\bin\Debug\net8.0\Taking.Dominio.dll
+G:\AvaliacaoTaking\Taking\Taking.Dominio\bin\Debug\net8.0\Taking.Dominio.pdb
+G:\AvaliacaoTaking\Taking\Taking.Dominio\obj\Debug\net8.0\Taking.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+G:\AvaliacaoTaking\Taking\Taking.Dominio\obj\Debug\net8.0\Taking.Dominio.AssemblyInfoInputs.cache
+G:\AvaliacaoTaking\Taking\Taking.Dominio\obj\Debug\net8.0\Taking.Dominio.AssemblyInfo.cs
+G:\AvaliacaoTaking\Taking\Taking.Dominio\obj\Debug\net8.0\Taking.Dominio.csproj.CoreCompileInputs.cache
+G:\AvaliacaoTaking\Taking\Taking.Dominio\obj\Debug\net8.0\Taking.Dominio.sourcelink.json
+G:\AvaliacaoTaking\Taking\Taking.Dominio\obj\Debug\net8.0\Taking.Dominio.dll
+G:\AvaliacaoTaking\Taking\Taking.Dominio\obj\Debug\net8.0\refint\Taking.Dominio.dll
+G:\AvaliacaoTaking\Taking\Taking.Dominio\obj\Debug\net8.0\Taking.Dominio.pdb
+G:\AvaliacaoTaking\Taking\Taking.Dominio\obj\Debug\net8.0\ref\Taking.Dominio.dll

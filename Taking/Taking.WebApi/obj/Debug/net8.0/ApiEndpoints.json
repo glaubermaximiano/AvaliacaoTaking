@@ -1,0 +1,82 @@
+[
+  {
+    "ContainingType": "Taking.WebApi.Controllers.ClienteController",
+    "Method": "ListaTodos",
+    "RelativePath": "api/AvaliacaoTaking/cliente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idcSituacao",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.ClienteController",
+    "Method": "Add",
+    "RelativePath": "api/AvaliacaoTaking/cliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "Taking.Dominio.Entidade.ClienteDominio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.ClienteController",
+    "Method": "Update",
+    "RelativePath": "api/AvaliacaoTaking/cliente",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "Taking.Dominio.Entidade.ClienteDominio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.ClienteController",
+    "Method": "BuscaPorId",
+    "RelativePath": "api/AvaliacaoTaking/cliente/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.ClienteController",
+    "Method": "Remove",
+    "RelativePath": "api/AvaliacaoTaking/cliente/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
