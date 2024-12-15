@@ -42,7 +42,7 @@ namespace Taking.Aplicacao.Teste
             var _servico = new Mock<IFilialServico>();
             _servico.Setup(s => s.ListaTodos("T")).Returns(_lstFiliais);
 
-            var _app = new FilialAppServico(_servico.Object).ListaTodos("T");
+            var _app = new FilialAppServico(new Mock<IVendaServico>().Object, _servico.Object).ListaTodos("T");
 
             Assert.True(_app.Count() != 0);
         }
@@ -55,7 +55,7 @@ namespace Taking.Aplicacao.Teste
             var _servico = new Mock<IFilialServico>();
             _servico.Setup(s => s.ListaTodos("T")).Returns(_lstFiliais);
 
-            var _app = new FilialAppServico(_servico.Object).ListaTodos("T");
+            var _app = new FilialAppServico(new Mock<IVendaServico>().Object, _servico.Object).ListaTodos("T");
 
             Assert.True(_app.Count() == 0);
         }
@@ -68,7 +68,7 @@ namespace Taking.Aplicacao.Teste
             var _servico = new Mock<IFilialServico>();
             _servico.Setup(s => s.BuscaPorId(It.IsAny<int>())).Returns(_objFilial);
 
-            var _app = new FilialAppServico(_servico.Object).BuscaPorId(It.IsAny<int>());
+            var _app = new FilialAppServico(new Mock<IVendaServico>().Object, _servico.Object).BuscaPorId(It.IsAny<int>());
 
             Assert.True(_app != null);
         }
@@ -89,7 +89,7 @@ namespace Taking.Aplicacao.Teste
             _servico.Setup(s => s.Add(_objFilial)).Returns(string.Empty);
             _servico.Setup(s => s.ListaTodos("T")).Returns(_lstFilial);
 
-            var _app = new FilialAppServico(_servico.Object).Add(_objFilial);
+            var _app = new FilialAppServico(new Mock<IVendaServico>().Object, _servico.Object).Add(_objFilial);
 
             Assert.True(string.IsNullOrEmpty(_app));
         }
@@ -110,7 +110,7 @@ namespace Taking.Aplicacao.Teste
             _servico.Setup(s => s.Add(_objFilial)).Returns(string.Empty);
             _servico.Setup(s => s.ListaTodos("T")).Returns(_lstFilial);
 
-            var _app = new FilialAppServico(_servico.Object).Add(_objFilial);
+            var _app = new FilialAppServico(new Mock<IVendaServico>().Object, _servico.Object).Add(_objFilial);
 
             Assert.True(!string.IsNullOrEmpty(_app));
         }
@@ -131,7 +131,7 @@ namespace Taking.Aplicacao.Teste
             _servico.Setup(s => s.Update(_objFilial)).Returns(string.Empty);
             _servico.Setup(s => s.ListaTodos("T")).Returns(_lstFilial);
 
-            var _app = new FilialAppServico(_servico.Object).Update(_objFilial);
+            var _app = new FilialAppServico(new Mock<IVendaServico>().Object, _servico.Object).Update(_objFilial);
 
             Assert.True(string.IsNullOrEmpty(_app));
         }
@@ -151,7 +151,8 @@ namespace Taking.Aplicacao.Teste
             _servico.Setup(s => s.Update(_objFilial)).Returns(string.Empty);
             _servico.Setup(s => s.ListaTodos("T")).Returns(_lstFilial);
 
-            var _app = new FilialAppServico(_servico.Object).Update(_objFilial);
+            var _app = new FilialAppServico(new Mock<IVendaServico>().Object,
+                                            _servico.Object).Update(_objFilial);
 
             Assert.True(!string.IsNullOrEmpty(_app));
         }
@@ -159,11 +160,14 @@ namespace Taking.Aplicacao.Teste
         [Fact]
         public void Excliu_Ok()
         {
+            var _venda = new Mock<IVendaServico>();
+            _venda.Setup(s => s.ListaPorFilial(It.IsAny<int>())).Returns(new List<VendaDominio>());
+
             var _servico = new Mock<IFilialServico>();
 
             _servico.Setup(s => s.Remove(It.IsAny<int>())).Returns(string.Empty);
 
-            var _app = new FilialAppServico(_servico.Object).Remove(It.IsAny<int>());
+            var _app = new FilialAppServico(_venda.Object, _servico.Object).Remove(It.IsAny<int>());
 
             Assert.True(string.IsNullOrEmpty(_app));
         }

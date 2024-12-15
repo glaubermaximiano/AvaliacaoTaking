@@ -8,11 +8,14 @@ namespace Taking.Aplicacao.Servico
 {
     public class FilialAppServico : Taking, IFilialAppServico
     {
+        readonly IVendaServico _venda;
         readonly IFilialServico _servico;
 
         [ExcludeFromCodeCoverage]
-        public FilialAppServico(IFilialServico servico)
+        public FilialAppServico(IVendaServico venda,
+                                IFilialServico servico)
         {
+            _venda = venda;
             _servico = servico;
         }
 
@@ -100,6 +103,11 @@ namespace Taking.Aplicacao.Servico
         {
             try
             {
+                if (_venda.ListaPorFilial(id).Any())
+                {
+                    return "Não é possível excluir Filial que já possui Vendas!";
+                }
+
                 _servico.Remove(id);
 
                 return string.Empty;

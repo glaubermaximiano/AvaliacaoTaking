@@ -1,3 +1,4 @@
+G:\AvaliacaoTaking\Taking\Taking.WebApi\bin\Debug\net8.0\nlog.config
 G:\AvaliacaoTaking\Taking\Taking.WebApi\bin\Debug\net8.0\appsettings.Development.json
 G:\AvaliacaoTaking\Taking\Taking.WebApi\bin\Debug\net8.0\appsettings.json
 G:\AvaliacaoTaking\Taking\Taking.WebApi\bin\Debug\net8.0\Taking.WebApi.staticwebassets.endpoints.json
@@ -48,4 +49,3 @@ G:\AvaliacaoTaking\Taking\Taking.WebApi\obj\Debug\net8.0\refint\Taking.WebApi.dl
 G:\AvaliacaoTaking\Taking\Taking.WebApi\obj\Debug\net8.0\Taking.WebApi.pdb
 G:\AvaliacaoTaking\Taking\Taking.WebApi\obj\Debug\net8.0\Taking.WebApi.genruntimeconfig.cache
 G:\AvaliacaoTaking\Taking\Taking.WebApi\obj\Debug\net8.0\ref\Taking.WebApi.dll
-G:\AvaliacaoTaking\Taking\Taking.WebApi\bin\Debug\net8.0\nlog.config

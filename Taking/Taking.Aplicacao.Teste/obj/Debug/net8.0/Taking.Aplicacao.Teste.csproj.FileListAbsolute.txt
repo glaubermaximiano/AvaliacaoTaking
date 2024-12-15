@@ -1,3 +1,5 @@
+G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\NLog.dll
+G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\CoverletSourceRootsMapping_Taking.Aplicacao.Teste
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\testhost.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\testhost.exe
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
@@ -7,6 +9,7 @@ G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Taking.Aplicac
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Taking.Aplicacao.Teste.runtimeconfig.json
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Taking.Aplicacao.Teste.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Taking.Aplicacao.Teste.pdb
+G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Castle.Core.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -15,8 +18,10 @@ G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Microsoft.Test
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Moq.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Newtonsoft.Json.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\NuGet.Frameworks.dll
+G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\xunit.abstractions.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\xunit.assert.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\xunit.core.dll
@@ -86,6 +91,12 @@ G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\zh-Hans\Micros
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Taking.Aplicacao.dll
+G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Taking.Dominio.dll
+G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Taking.Aplicacao.pdb
+G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Taking.Dominio.pdb
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\obj\Debug\net8.0\Taking.Aplicacao.Teste.csproj.AssemblyReference.cache
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\obj\Debug\net8.0\Taking.Aplicacao.Teste.GeneratedMSBuildEditorConfig.editorconfig
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\obj\Debug\net8.0\Taking.Aplicacao.Teste.AssemblyInfoInputs.cache
@@ -98,14 +109,3 @@ G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\obj\Debug\net8.0\refint\Taking.
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\obj\Debug\net8.0\Taking.Aplicacao.Teste.pdb
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\obj\Debug\net8.0\Taking.Aplicacao.Teste.genruntimeconfig.cache
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\obj\Debug\net8.0\ref\Taking.Aplicacao.Teste.dll
-G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\CoverletSourceRootsMapping_Taking.Aplicacao.Teste
-G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Castle.Core.dll
-G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Moq.dll
-G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\NLog.dll
-G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
-G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
-G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
-G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Taking.Aplicacao.dll
-G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Taking.Dominio.dll
-G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Taking.Aplicacao.pdb
-G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Taking.Dominio.pdb

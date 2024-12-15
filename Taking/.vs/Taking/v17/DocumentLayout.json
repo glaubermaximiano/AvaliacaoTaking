@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "G:\\AvaliacaoTaking\\Taking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1D202D9-902D-4231-9324-819341DECC6D}|Taking.WebApi\\Taking.WebApi.csproj|g:\\avaliacaotaking\\taking\\taking.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1D202D9-902D-4231-9324-819341DECC6D}|Taking.WebApi\\Taking.WebApi.csproj|solutionrelative:taking.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1D202D9-902D-4231-9324-819341DECC6D}|Taking.WebApi\\Taking.WebApi.csproj|g:\\avaliacaotaking\\taking\\taking.webapi\\controllers\\vendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1D202D9-902D-4231-9324-819341DECC6D}|Taking.WebApi\\Taking.WebApi.csproj|solutionrelative:taking.webapi\\controllers\\vendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82B8E9BB-5620-4222-878E-3DE5E2D6C4CF}|Taking.Infra.Dados\\Taking.Infra.Dados.csproj|g:\\avaliacaotaking\\taking\\taking.infra.dados\\repositorio\\vendarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82B8E9BB-5620-4222-878E-3DE5E2D6C4CF}|Taking.Infra.Dados\\Taking.Infra.Dados.csproj|solutionrelative:taking.infra.dados\\repositorio\\vendarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD2112D-35AF-4848-8607-8B60B95CD20A}|Taking.Aplicacao\\Taking.Aplicacao.csproj|g:\\avaliacaotaking\\taking\\taking.aplicacao\\servico\\vendaappservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCD2112D-35AF-4848-8607-8B60B95CD20A}|Taking.Aplicacao\\Taking.Aplicacao.csproj|solutionrelative:taking.aplicacao\\servico\\vendaappservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ED5AB21-C611-4DB8-AC54-EBBA9203D9B5}|Taking.Aplicacao.Teste\\Taking.Aplicacao.Teste.csproj|g:\\avaliacaotaking\\taking\\taking.aplicacao.teste\\vendateste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ED5AB21-C611-4DB8-AC54-EBBA9203D9B5}|Taking.Aplicacao.Teste\\Taking.Aplicacao.Teste.csproj|solutionrelative:taking.aplicacao.teste\\vendateste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VendaController.cs",
+              "DocumentMoniker": "G:\\AvaliacaoTaking\\Taking\\Taking.WebApi\\Controllers\\VendaController.cs",
+              "RelativeDocumentMoniker": "Taking.WebApi\\Controllers\\VendaController.cs",
+              "ToolTip": "G:\\AvaliacaoTaking\\Taking\\Taking.WebApi\\Controllers\\VendaController.cs",
+              "RelativeToolTip": "Taking.WebApi\\Controllers\\VendaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T05:56:57.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VendaRepositorio.cs",
+              "DocumentMoniker": "G:\\AvaliacaoTaking\\Taking\\Taking.Infra.Dados\\Repositorio\\VendaRepositorio.cs",
+              "RelativeDocumentMoniker": "Taking.Infra.Dados\\Repositorio\\VendaRepositorio.cs",
+              "ToolTip": "G:\\AvaliacaoTaking\\Taking\\Taking.Infra.Dados\\Repositorio\\VendaRepositorio.cs",
+              "RelativeToolTip": "Taking.Infra.Dados\\Repositorio\\VendaRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T05:56:09.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VendaTeste.cs",
+              "DocumentMoniker": "G:\\AvaliacaoTaking\\Taking\\Taking.Aplicacao.Teste\\VendaTeste.cs",
+              "RelativeDocumentMoniker": "Taking.Aplicacao.Teste\\VendaTeste.cs",
+              "ToolTip": "G:\\AvaliacaoTaking\\Taking\\Taking.Aplicacao.Teste\\VendaTeste.cs",
+              "RelativeToolTip": "Taking.Aplicacao.Teste\\VendaTeste.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T05:53:25.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VendaAppServico.cs",
+              "DocumentMoniker": "G:\\AvaliacaoTaking\\Taking\\Taking.Aplicacao\\Servico\\VendaAppServico.cs",
+              "RelativeDocumentMoniker": "Taking.Aplicacao\\Servico\\VendaAppServico.cs",
+              "ToolTip": "G:\\AvaliacaoTaking\\Taking\\Taking.Aplicacao\\Servico\\VendaAppServico.cs",
+              "RelativeToolTip": "Taking.Aplicacao\\Servico\\VendaAppServico.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T05:50:17.385Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -87,19 +151,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\AvaliacaoTaking\\Taking\\Taking.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "Taking.WebApi\\Program.cs",
-              "ToolTip": "G:\\AvaliacaoTaking\\Taking\\Taking.WebApi\\Program.cs",
-              "RelativeToolTip": "Taking.WebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T03:37:12.538Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -254,5 +254,58 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.VendaController",
+    "Method": "Add",
+    "RelativePath": "api/AvaliacaoTaking/venda",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "Taking.Dominio.Request.VendaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.VendaController",
+    "Method": "BuscaPorCodigo",
+    "RelativePath": "api/AvaliacaoTaking/venda/{CodVenda}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CodVenda",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.VendaController",
+    "Method": "BuscaPorData",
+    "RelativePath": "api/AvaliacaoTaking/venda/busca-por-data",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dataInicio",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dataFim",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

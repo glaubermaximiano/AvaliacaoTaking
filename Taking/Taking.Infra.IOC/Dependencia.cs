@@ -28,6 +28,10 @@ namespace Taking.Infra.IOC
             servico.AddScoped<IProdutoAppServico, ProdutoAppServico>();
             servico.AddScoped<IProdutoServico, ProdutoServico>();
             servico.AddScoped<IProdutoRepositorio>(s => new ProdutoRepositorio(string.Empty));
+
+            servico.AddScoped<IVendaAppServico, VendaAppServico>();
+            servico.AddScoped<IVendaServico, VendaServico>();
+            servico.AddScoped<IVendaRepositorio>(s => new VendaRepositorio(string.Empty));
         }
     }
 }

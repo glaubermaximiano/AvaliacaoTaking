@@ -8,11 +8,14 @@ namespace Taking.Aplicacao.Servico
 {
     public class ClienteAppServico : Taking, IClienteAppServico
     {
+        readonly IVendaServico _venda;
         readonly IClienteServico _servico;
 
         [ExcludeFromCodeCoverage]
-        public ClienteAppServico(IClienteServico servico)
+        public ClienteAppServico(IVendaServico venda,
+                                 IClienteServico servico)
         {
+            _venda = venda;
             _servico = servico;
         }
 
@@ -100,6 +103,11 @@ namespace Taking.Aplicacao.Servico
         {
             try
             {
+                if (_venda.ListaPorCliente(id).Any())
+                {
+                    return "Não é possível excluir Cliente que já possui Vendas!";
+                }
+
                 _servico.Remove(id);
 
                 return string.Empty;

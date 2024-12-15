@@ -50,5 +50,19 @@ namespace Taking.Infra.Dados
                 return _produto;
             }
         }
+
+        IVendaRepositorio _venda;
+        public IVendaRepositorio Venda
+        {
+            get
+            {
+                if (_venda == null)
+                {
+                    _venda = new VendaRepositorio(this.StrConexao);
+                }
+
+                return _venda;
+            }
+        }
     }
 }
