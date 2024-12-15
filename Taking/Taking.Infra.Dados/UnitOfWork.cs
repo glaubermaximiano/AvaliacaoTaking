@@ -36,5 +36,19 @@ namespace Taking.Infra.Dados
                 return _filial;
             }
         }
+
+        IProdutoRepositorio _produto;
+        public IProdutoRepositorio Produto
+        {
+            get
+            {
+                if (_produto == null)
+                {
+                    _produto = new ProdutoRepositorio(this.StrConexao);
+                }
+
+                return _produto;
+            }
+        }
     }
 }

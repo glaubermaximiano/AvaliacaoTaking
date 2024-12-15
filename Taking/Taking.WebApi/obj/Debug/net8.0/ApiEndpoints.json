@@ -158,5 +158,101 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.ProdutoController",
+    "Method": "ListaTodos",
+    "RelativePath": "api/AvaliacaoTaking/produto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idcSituacao",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.ProdutoController",
+    "Method": "Add",
+    "RelativePath": "api/AvaliacaoTaking/produto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "Taking.Dominio.Entidade.ProdutoDominio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.ProdutoController",
+    "Method": "Update",
+    "RelativePath": "api/AvaliacaoTaking/produto",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "Taking.Dominio.Entidade.ProdutoDominio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.ProdutoController",
+    "Method": "BuscaPorId",
+    "RelativePath": "api/AvaliacaoTaking/produto/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.ProdutoController",
+    "Method": "Remove",
+    "RelativePath": "api/AvaliacaoTaking/produto/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.ProdutoController",
+    "Method": "BuscaPeloCodigo",
+    "RelativePath": "api/AvaliacaoTaking/produto/busca-pelo-codigo/{CodProduto}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CodProduto",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

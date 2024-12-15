@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using Taking.Dominio.Validacao;
 
 namespace Taking.Dominio.Entidade
 {
@@ -7,6 +8,7 @@ namespace Taking.Dominio.Entidade
     {
         public int Id { get; set; }
 
+        [ValidaSituacao]
         public string IdcSituacao { get; set; }
 
         public string DescSituacao

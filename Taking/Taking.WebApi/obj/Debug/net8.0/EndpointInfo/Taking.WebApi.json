@@ -254,12 +254,158 @@
           }
         }
       }
+    },
+    "/api/AvaliacaoTaking/produto": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "idcSituacao",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Produto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDominio"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDominio"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDominio"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Produto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDominio"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDominio"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDominio"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/AvaliacaoTaking/produto/{Id}": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/AvaliacaoTaking/produto/busca-pelo-codigo/{CodProduto}": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "CodProduto",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
       "ClienteDominio": {
         "required": [
+          "EndCliente",
           "NomCliente"
         ],
         "type": "object",
@@ -279,6 +425,15 @@
           },
           "NomCliente": {
             "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "CodTelefone": {
+            "type": "string",
+            "nullable": true
+          },
+          "EndCliente": {
+            "maxLength": 500,
             "minLength": 0,
             "type": "string"
           }
@@ -308,6 +463,51 @@
             "maxLength": 100,
             "minLength": 0,
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProdutoDominio": {
+        "required": [
+          "CodProduto",
+          "DescProduto",
+          "NomProduto"
+        ],
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "IdcSituacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "DescSituacao": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "CodProduto": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string"
+          },
+          "NomProduto": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "DescProduto": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string"
+          },
+          "ValPrecoUnitario": {
+            "maximum": 999999,
+            "minimum": 0,01,
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

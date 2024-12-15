@@ -8,7 +8,7 @@ namespace Taking.Aplicacao
 
         protected void TrataErro(string msgErro)
         {
-            NLog.LogManager.GetLogger("fileTarget").Error(msgErro);
+            NLog.LogManager.GetCurrentClassLogger().Error(msgErro);
         }
     }
 }

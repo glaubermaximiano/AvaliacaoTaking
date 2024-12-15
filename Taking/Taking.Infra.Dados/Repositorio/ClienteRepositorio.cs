@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using Taking.Dominio.Entidade;
+using Taking.Dominio.Helper;
 using Taking.Dominio.Interface.Repositorio;
 
 namespace Taking.Infra.Dados.Repositorio
@@ -13,6 +14,8 @@ namespace Taking.Infra.Dados.Repositorio
 
         string _qry = @" SELECT num_cliente as Id,
                                 nom_cliente as NomCliente,
+                                cod_telefone as CodTelefone,
+                                end_cliente as EndCliente,
                                 idc_situacao as IdcSituacao
                          FROM cliente ";
 
@@ -51,8 +54,8 @@ namespace Taking.Infra.Dados.Repositorio
         {
             try
             {
-                var _query = @$" INSERT INTO cliente (nom_cliente, idc_situacao)
-								 VALUES ('{obj.NomCliente.Trim()}', '{obj.IdcSituacao.Trim()}')";
+                var _query = @$" INSERT INTO cliente (nom_cliente, cod_telefone, end_cliente, idc_situacao)
+								 VALUES ('{obj.NomCliente.Trim()}', '{UtilHelper.SomenteNumero(obj.CodTelefone.Trim().PadLeft(11, '0'))}', '{obj.EndCliente.Trim()}', '{obj.IdcSituacao.Trim()}')";
 
                 Execute(_query);
             }
@@ -68,6 +71,8 @@ namespace Taking.Infra.Dados.Repositorio
             {
                 var _query = @$" UPDATE cliente 
                                  SET nom_cliente = '{obj.NomCliente.Trim()}', 
+                                     cod_telefone = '{UtilHelper.SomenteNumero(obj.CodTelefone.Trim().PadLeft(11, '0'))}',
+                                     end_cliente = '{obj.EndCliente.Trim()}',
                                      idc_situacao = '{obj.IdcSituacao.Trim()}'
                                  WHERE num_cliente= {obj.Id} ";
 

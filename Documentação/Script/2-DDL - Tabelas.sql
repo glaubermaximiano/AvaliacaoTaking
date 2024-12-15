@@ -10,6 +10,8 @@ drop table cliente;
 create table cliente 
 ( num_cliente int not null GENERATED ALWAYS AS IDENTITY,
   nom_cliente varchar(100) not null,
+  cod_telefone varchar(11),
+  end_cliente varchar(500),
   idc_situacao char(1) not null,
   constraint pk_cliente primary key (num_cliente),
   constraint ck1_cliente check (idc_situacao = 'A' or idc_situacao = 'I'));

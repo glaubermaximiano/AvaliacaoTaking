@@ -4,7 +4,7 @@ using Taking.Dominio.Interface.CRUD;
 
 namespace Taking.Dominio.Interface.Repositorio
 {
-    public interface IFilialRepositorio : IListaTodos<FilialDominio>,
+    public interface IFilialRepositorio :   IListaTodos<FilialDominio>,
                                             IBuscaPorId<FilialDominio>,
                                             IAddRepositorio<FilialDominio>,
                                             IUpdateRepositorio<FilialDominio>,

@@ -1,12 +1,35 @@
 ﻿using Moq;
+using System.Diagnostics.CodeAnalysis;
 using Taking.Aplicacao.Servico;
 using Taking.Dominio.Entidade;
 using Taking.Dominio.Interface.Servico;
+using Taking.Dominio.Validacao;
 
 namespace Taking.Aplicacao.Teste
 {
+    [ExcludeFromCodeCoverage]
     public class ClienteTeste
     {
+        [Fact]
+        public void ValidaPreenchimento_Ok()
+        {
+            var _obj = new ClienteDominio { Id = 1, NomCliente = "Teste I", IdcSituacao = "A", CodTelefone = "31999999999", EndCliente = "Rua A" };
+
+            var _msg = ValidaPreenchimento.Validar(_obj);
+
+            Assert.True(string.IsNullOrEmpty(_msg));
+        }
+
+        [Fact]
+        public void ValidaPreenchimento_NaoOk()
+        {
+            var _obj = new ClienteDominio { Id = 1, NomCliente = "Teste I", IdcSituacao = "A" };
+
+            var _msg = ValidaPreenchimento.Validar(_obj);
+
+            Assert.True(!string.IsNullOrEmpty(_msg));
+        }
+
         [Fact]
         public void ListaTodos_Ok()
         {
@@ -105,7 +128,7 @@ namespace Taking.Aplicacao.Teste
 
             var _servico = new Mock<IClienteServico>();
 
-            _servico.Setup(s => s.Add(_objCliente)).Returns(string.Empty);
+            _servico.Setup(s => s.Update(_objCliente)).Returns(string.Empty);
             _servico.Setup(s => s.ListaTodos("T")).Returns(_lstClientes);
 
             var _app = new ClienteAppServico(_servico.Object).Update(_objCliente);
@@ -125,7 +148,7 @@ namespace Taking.Aplicacao.Teste
 
             var _servico = new Mock<IClienteServico>();
 
-            _servico.Setup(s => s.Add(_objCliente)).Returns(string.Empty);
+            _servico.Setup(s => s.Update(_objCliente)).Returns(string.Empty);
             _servico.Setup(s => s.ListaTodos("T")).Returns(_lstClientes);
 
             var _app = new ClienteAppServico(_servico.Object).Update(_objCliente);

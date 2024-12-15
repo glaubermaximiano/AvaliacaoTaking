@@ -15,7 +15,21 @@ namespace Taking.WebApi
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            var logger = NLog.LogManager.GetCurrentClassLogger();
+            try
+            {
+                logger.Debug("Inicializando API...");
+                CreateHostBuilder(args).Build().Run();
+            }
+            catch (Exception exception)
+            {
+                logger.Error(exception, $"Erro ao iniciar aplicação: {exception.Message}");
+                throw;
+            }
+            finally
+            {
+                NLog.LogManager.Shutdown();
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

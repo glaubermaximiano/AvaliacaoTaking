@@ -1,13 +1,35 @@
-﻿
-using Moq;
+﻿using Moq;
+using System.Diagnostics.CodeAnalysis;
 using Taking.Aplicacao.Servico;
 using Taking.Dominio.Entidade;
 using Taking.Dominio.Interface.Servico;
+using Taking.Dominio.Validacao;
 
 namespace Taking.Aplicacao.Teste
 {
+    [ExcludeFromCodeCoverage]
     public class FilialTeste
     {
+        [Fact]
+        public void ValidaPreenchimento_Ok()
+        {
+            var _obj = new FilialDominio { Id = 1, NomFilial = "Filial I", IdcSituacao = "A" };
+
+            var _msg = ValidaPreenchimento.Validar(_obj);
+
+            Assert.True(string.IsNullOrEmpty(_msg));
+        }
+
+        [Fact]
+        public void ValidaPreenchimento_NaoOk()
+        {
+            var _obj = new FilialDominio { Id = 1, NomFilial = null, IdcSituacao = "A" };
+
+            var _msg = ValidaPreenchimento.Validar(_obj);
+
+            Assert.True(!string.IsNullOrEmpty(_msg));
+        }
+
         [Fact]
         public void ListaTodos_Ok()
         {
@@ -106,7 +128,7 @@ namespace Taking.Aplicacao.Teste
 
             var _servico = new Mock<IFilialServico>();
 
-            _servico.Setup(s => s.Add(_objFilial)).Returns(string.Empty);
+            _servico.Setup(s => s.Update(_objFilial)).Returns(string.Empty);
             _servico.Setup(s => s.ListaTodos("T")).Returns(_lstFilial);
 
             var _app = new FilialAppServico(_servico.Object).Update(_objFilial);
@@ -126,7 +148,7 @@ namespace Taking.Aplicacao.Teste
 
             var _servico = new Mock<IFilialServico>();
 
-            _servico.Setup(s => s.Add(_objFilial)).Returns(string.Empty);
+            _servico.Setup(s => s.Update(_objFilial)).Returns(string.Empty);
             _servico.Setup(s => s.ListaTodos("T")).Returns(_lstFilial);
 
             var _app = new FilialAppServico(_servico.Object).Update(_objFilial);
