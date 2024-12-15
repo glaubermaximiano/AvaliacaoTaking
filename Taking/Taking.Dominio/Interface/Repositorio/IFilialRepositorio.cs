@@ -8,6 +8,7 @@ namespace Taking.Dominio.Interface.Repositorio
                                             IBuscaPorId<FilialDominio>,
                                             IAddRepositorio<FilialDominio>,
                                             IUpdateRepositorio<FilialDominio>,
+                                            ICancelaRepositorio,
                                             IRemoveRepositorio
     {
     }

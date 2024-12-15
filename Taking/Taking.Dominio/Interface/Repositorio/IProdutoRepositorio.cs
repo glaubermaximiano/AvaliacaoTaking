@@ -8,6 +8,7 @@ namespace Taking.Dominio.Interface.Repositorio
                                             IBuscaPorId<ProdutoDominio>,
                                             IAddRepositorio<ProdutoDominio>,
                                             IUpdateRepositorio<ProdutoDominio>,
+                                            ICancelaRepositorio,
                                             IRemoveRepositorio
     {
         ProdutoDominio BuscaPeloCodigo(string codProduto);

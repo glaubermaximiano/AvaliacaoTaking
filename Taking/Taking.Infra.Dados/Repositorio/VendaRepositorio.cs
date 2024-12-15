@@ -14,8 +14,8 @@ namespace Taking.Infra.Dados.Repositorio
         string _qry = @" SELECT num_venda as Id,
                                 cod_venda as CodVenda,
                                 dth_venda as DthVenda,
-                                num_cliente as NumCliente,
-                                num_filial as NumFilial,
+                                num_cliente as ClienteId,
+                                num_filial as FilialId,
                                 idc_situacao as IdcSituacao
                          FROM venda ";
 
@@ -70,11 +70,23 @@ namespace Taking.Infra.Dados.Repositorio
             }
         }
 
-        public VendaDominio BuscaPeloCodigo(string codVenda)
+        public VendaDominio BuscaPeloCodigo(int codVenda)
         {
             try
             {
                 return QueryFirstOrDefault<VendaDominio>($"{_qry} WHERE cod_venda = '{codVenda}'");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO " + GetType().Name + "." + MethodBase.GetCurrentMethod() + "(): " + ex.Message);
+            }
+        }
+
+        public VendaDominio BuscaPorId(int id)
+        {
+            try
+            {
+                return QueryFirstOrDefault<VendaDominio>($"{_qry} WHERE num_venda = {id}");
             }
             catch (Exception ex)
             {
@@ -89,11 +101,27 @@ namespace Taking.Infra.Dados.Repositorio
                 var _codVenda = GeraNumeroVenda();
 
                 var _query = @$" INSERT INTO venda (cod_venda, dth_venda, num_cliente, num_filial, idc_situacao)
-								 VALUES ('{_codVenda}', '{obj.DthVenda.ToString("yyyy-MM-dd HH:mm")}', {obj.NumCliente}, {obj.NumFilial}, '{obj.IdcSituacao}')";
+								 VALUES ('{_codVenda}', '{obj.DthVenda.ToString("yyyy-MM-dd HH:mm")}', {obj.ClienteId}, {obj.FilialId}, '{obj.IdcSituacao}')";
 
                 Execute(_query);
 
                 return _codVenda;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO " + GetType().Name + "." + MethodBase.GetCurrentMethod() + "(): " + ex.Message);
+            }
+        }
+
+        public void Cancela(int codVenda)
+        {
+            try
+            {
+                var _query = @$" UPDATE venda 
+                                 SET idc_situacao = 'I'
+								 WHERE cod_venda = '{codVenda}'";
+
+                Execute(_query);
             }
             catch (Exception ex)
             {

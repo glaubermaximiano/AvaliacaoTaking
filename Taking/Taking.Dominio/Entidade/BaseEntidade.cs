@@ -15,7 +15,7 @@ namespace Taking.Dominio.Entidade
         {
             get
             {
-                return this.IdcSituacao == "A"? "Ativo": "Inativo";
+                return this.IdcSituacao == "A"? "Ativo": "Cancelado";
             }
         }
     }

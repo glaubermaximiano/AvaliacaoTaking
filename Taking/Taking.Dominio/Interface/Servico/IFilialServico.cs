@@ -4,11 +4,12 @@ using Taking.Dominio.Interface.CRUD;
 
 namespace Taking.Dominio.Interface.Servico
 {
-    public interface IFilialServico : IListaTodos<FilialDominio>,
-                                       IBuscaPorId<FilialDominio>,
-                                       IAddServico<FilialDominio>,
-                                       IUpdateServico<FilialDominio>,
-                                       IRemoveServico
+    public interface IFilialServico :   IListaTodos<FilialDominio>,
+                                        IBuscaPorId<FilialDominio>,
+                                        IAddServico<FilialDominio>,
+                                        IUpdateServico<FilialDominio>,
+                                        ICancelaServico,
+                                        IRemoveServico
     {
     }
 }

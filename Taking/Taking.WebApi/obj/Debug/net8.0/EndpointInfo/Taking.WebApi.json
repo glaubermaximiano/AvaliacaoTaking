@@ -132,6 +132,29 @@
         }
       }
     },
+    "/api/AvaliacaoTaking/cliente/{Id}/cancela": {
+      "patch": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/AvaliacaoTaking/filial": {
       "get": {
         "tags": [
@@ -234,6 +257,29 @@
         }
       },
       "delete": {
+        "tags": [
+          "Filial"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/AvaliacaoTaking/filial/{Id}/cancela": {
+      "patch": {
         "tags": [
           "Filial"
         ],
@@ -400,6 +446,29 @@
         }
       }
     },
+    "/api/AvaliacaoTaking/produto/{Id}/cancela": {
+      "patch": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/AvaliacaoTaking/venda/busca-por-data": {
       "get": {
         "tags": [
@@ -439,7 +508,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -474,6 +544,61 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/AvaliacaoTaking/venda/{CodVenda}/cancela": {
+      "patch": {
+        "tags": [
+          "Venda"
+        ],
+        "parameters": [
+          {
+            "name": "CodVenda",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/AvaliacaoTaking/venda/{CodVenda}/cancela/{IdItemVenda}": {
+      "patch": {
+        "tags": [
+          "Venda"
+        ],
+        "parameters": [
+          {
+            "name": "CodVenda",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "IdItemVenda",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success"
@@ -593,6 +718,24 @@
         },
         "additionalProperties": false
       },
+      "VendaItemRequest": {
+        "type": "object",
+        "properties": {
+          "CodProduto": {
+            "type": "string",
+            "nullable": true
+          },
+          "QteProduto": {
+            "type": "number",
+            "format": "double"
+          },
+          "ValDescontoUnitario": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "VendaRequest": {
         "type": "object",
         "properties": {
@@ -600,17 +743,24 @@
             "type": "string",
             "format": "date-time"
           },
-          "NumCliente": {
+          "ClienteId": {
             "maximum": 2147483647,
             "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
-          "NumFilial": {
+          "FilialId": {
             "maximum": 2147483647,
             "minimum": 1,
             "type": "integer",
             "format": "int32"
+          },
+          "Items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VendaItemRequest"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false

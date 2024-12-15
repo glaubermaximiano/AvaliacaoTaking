@@ -10,6 +10,7 @@ using Taking.Dominio.Validacao;
 using System.Net.Http;
 using System.Net;
 using System.Diagnostics.CodeAnalysis;
+using Taking.Aplicacao.Interface;
 
 namespace Taking.WebApi
 {
@@ -152,6 +153,22 @@ namespace Taking.WebApi
             try
             {
                 var _msg = servico.Remove(Id);
+
+                return string.IsNullOrEmpty(_msg) ? Ok(_msg) : this.StatusCode(StatusCodes.Status422UnprocessableEntity, _msg);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        protected ActionResult Cancela(ICancelaAppServico servico, int Id)
+        {
+            Init();
+
+            try
+            {
+                var _msg = servico.Cancela(Id);
 
                 return string.IsNullOrEmpty(_msg) ? Ok(_msg) : this.StatusCode(StatusCodes.Status422UnprocessableEntity, _msg);
             }

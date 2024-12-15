@@ -111,5 +111,20 @@ namespace Taking.Infra.Dados.Repositorio
             }
         }
 
+        public void Cancela(int id)
+        {
+            try
+            {
+                var _query = @$" UPDATE produto 
+                                 SET idc_situacao = 'I'
+                                  WHERE num_produto = {id}";
+
+                Execute(_query);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO " + GetType().Name + "." + MethodBase.GetCurrentMethod() + "(): " + ex.Message);
+            }
+        }
     }
 }

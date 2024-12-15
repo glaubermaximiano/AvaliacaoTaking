@@ -1,9 +1,9 @@
 ﻿using Taking.Dominio.Entidade;
-using Taking.Dominio.Interface.CRUD.Servico;
+using Taking.Dominio.Interface.CRUD;
 
 namespace Taking.Dominio.Interface.Servico
 {
-    public interface IVendaServico 
+    public interface IVendaServico: IBuscaPorId<VendaDominio>
     {
         int Add(VendaDominio obj);
 
@@ -13,6 +13,8 @@ namespace Taking.Dominio.Interface.Servico
 
         List<VendaDominio> ListaPorFilial(int numFilial);
 
-        VendaDominio BuscaPeloCodigo(string codVenda);
+        VendaDominio BuscaPeloCodigo(int codVenda);
+
+        string Cancela(int codVenda);
     }
 }

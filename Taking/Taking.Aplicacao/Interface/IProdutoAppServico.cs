@@ -8,6 +8,7 @@ namespace Taking.Aplicacao.Interface
                                           IBuscaPorId<ProdutoDominio>,
                                           IAppServiceAdd<ProdutoDominio>,
                                           IAppServiceUpdate<ProdutoDominio>,
+                                          ICancelaAppServico,
                                           IAppServiceRemove
     {
         ProdutoDominio BuscaPeloCodigo(string codProduto);

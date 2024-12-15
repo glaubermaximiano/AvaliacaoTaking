@@ -67,8 +67,7 @@ namespace Taking.Infra.Dados.Repositorio
             try
             {
                 var _query = @$" UPDATE filial 
-                                 SET nom_filial = '{obj.NomFilial.Trim()}', 
-                                     idc_situacao = '{obj.IdcSituacao.Trim()}'
+                                 SET nom_filial = '{obj.NomFilial.Trim()}'
                                  WHERE num_filial= {obj.Id} ";
 
                 Execute(_query);
@@ -84,6 +83,22 @@ namespace Taking.Infra.Dados.Repositorio
             try
             {
                 var _query = @$" DELETE FROM filial 
+                                 WHERE num_filial= {id} ";
+
+                Execute(_query);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO " + GetType().Name + "." + MethodBase.GetCurrentMethod() + "(): " + ex.Message);
+            }
+        }
+
+        public void Cancela(int id)
+        {
+            try
+            {
+                var _query = @$" UPDATE filial 
+                                 SET idc_situacao = 'I'
                                  WHERE num_filial= {id} ";
 
                 Execute(_query);

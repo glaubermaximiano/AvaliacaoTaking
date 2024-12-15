@@ -12,5 +12,7 @@ namespace Taking.Dominio.Interface.Repositorio
         IProdutoRepositorio Produto { get; }
 
         IVendaRepositorio Venda { get; }
+
+        IVendaItemRepositorio VendaItem { get; }
     }
 }

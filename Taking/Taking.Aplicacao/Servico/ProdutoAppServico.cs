@@ -122,5 +122,35 @@ namespace Taking.Aplicacao.Servico
                 throw new Exception(msgErro);
             }
         }
+
+        public string Cancela(int id)
+        {
+            try
+            {
+                var _objProduto = _servico.BuscaPorId(id);
+
+                if (_objProduto == null)
+                {
+                    return "Produto não encontrado!";
+                }
+
+                if (_objProduto.IdcSituacao == "I")
+                {
+                    return "Produto já cancelado!";
+                }
+
+                _servico.Cancela(id);
+
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                var msgErro = "ERRO " + GetType().Name + "." + MethodBase.GetCurrentMethod() + "(): " + ex.Message;
+
+                TrataErro(msgErro);
+
+                throw new Exception(msgErro);
+            }
+        }
     }
 }

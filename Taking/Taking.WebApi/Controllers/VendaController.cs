@@ -17,13 +17,18 @@ namespace Taking.WebApi.Controllers
     [ExcludeFromCodeCoverage]
     public class VendaController: TakingWebApi<VendaRequest>
     {
+        readonly IVendaItemAppServico _vendaItem;
         readonly IVendaAppServico _appServico;
 
         public VendaController(ConfigAmbiente config,
                                  IUnitOfWork unitOfWork,
+                                 IVendaItemAppServico vendaItem,
                                  IVendaAppServico appServico)
             : base(config, unitOfWork)
         {
+            Init();
+
+            _vendaItem = vendaItem;
             _appServico = appServico;
         }
 
@@ -31,19 +36,13 @@ namespace Taking.WebApi.Controllers
         [AllowAnonymous]
         [Route("api/AvaliacaoTaking/venda/busca-por-data")]
         public IActionResult BuscaPorData(string dataInicio, string dataFim)
-        {
-            Init();
-            return Get(_appServico.BuscaPorData(DateTime.Parse(dataInicio), DateTime.Parse(dataFim)));
-        }
+           => Get(_appServico.BuscaPorData(DateTime.Parse(dataInicio), DateTime.Parse(dataFim)));
 
         [HttpGet]
         [AllowAnonymous]
         [Route("api/AvaliacaoTaking/venda/{CodVenda}")]
-        public IActionResult BuscaPeloCodigo(string CodVenda)
-        {
-            Init();
-            return Get(_appServico.BuscaPeloCodigo(CodVenda));
-        }
+        public IActionResult BuscaPeloCodigo(int CodVenda)
+           => Get(_appServico.BuscaPeloCodigo(CodVenda));
 
         [HttpPost]
         [AllowAnonymous]
@@ -66,6 +65,31 @@ namespace Taking.WebApi.Controllers
             catch (TakingException ex)
             {
                 return this.StatusCode(StatusCodes.Status422UnprocessableEntity, ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPatch]
+        [AllowAnonymous]
+        [Route("api/AvaliacaoTaking/venda/{CodVenda}/cancela")]
+        public IActionResult Cancela(int CodVenda)
+           => Cancela(_appServico, CodVenda);
+
+        [HttpPatch]
+        [AllowAnonymous]
+        [Route("api/AvaliacaoTaking/venda/{CodVenda}/cancela/{IdItemVenda}")]
+        public IActionResult CancelaItem(int CodVenda, int IdItemVenda)
+        {
+            Init();
+
+            try
+            {
+                var _msg = _vendaItem.CancelaItem(_appServico.BuscaPeloCodigo(CodVenda).Id, IdItemVenda);
+
+                return string.IsNullOrEmpty(_msg) ? Ok(_msg) : this.StatusCode(StatusCodes.Status422UnprocessableEntity, _msg);
             }
             catch (Exception ex)
             {

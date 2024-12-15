@@ -21,14 +21,31 @@ namespace Taking.Dominio.Servico
         public List<VendaDominio> ListaPorFilial(int numFilial)
            => _repositorio.Venda.ListaPorFilial(numFilial);
 
-        public VendaDominio BuscaPeloCodigo(string codVenda)
+        public VendaDominio BuscaPeloCodigo(int codVenda)
            => _repositorio.Venda.BuscaPeloCodigo(codVenda);
+
+        public VendaDominio BuscaPorId(int id)
+           => _repositorio.Venda.BuscaPorId(id);
 
         public int Add(VendaDominio obj)
         {
             try
             {
                 return _repositorio.Venda.Add(obj);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO " + GetType().Name + "." + MethodBase.GetCurrentMethod() + "(): " + ex.Message);
+            }
+        }
+
+        public string Cancela(int codVenda)
+        {
+            try
+            {
+                _repositorio.Venda.Cancela(codVenda);
+
+                return string.Empty;
             }
             catch (Exception ex)
             {

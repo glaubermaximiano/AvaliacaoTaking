@@ -18,6 +18,7 @@ namespace Taking.WebApi.Controllers
                                  IFilialAppServico appServico)
             : base(config, unitOfWork)
         {
+            Init();
             _appServico = appServico;
         }
 
@@ -25,44 +26,36 @@ namespace Taking.WebApi.Controllers
         [AllowAnonymous]
         [Route("api/AvaliacaoTaking/filial")]
         public IActionResult ListaTodos(string idcSituacao)
-        {
-            Init();
-
-            return Get(_appServico.ListaTodos(idcSituacao));
-        }
+           => Get(_appServico.ListaTodos(idcSituacao));
 
         [HttpGet]
         [AllowAnonymous]
         [Route("api/AvaliacaoTaking/filial/{Id}")]
         public IActionResult BuscaPorId(int Id)
-        {
-            Init();
-
-            return Get(_appServico.BuscaPorId(Id));
-        }
+           => Get(_appServico.BuscaPorId(Id));
 
         [HttpPost]
         [AllowAnonymous]
         [Route("api/AvaliacaoTaking/filial")]
         public IActionResult Add([FromBody] FilialDominio obj)
-        {
-            return Add(_appServico, obj);
-        }
+           => Add(_appServico, obj);
 
         [HttpPut]
         [AllowAnonymous]
         [Route("api/AvaliacaoTaking/filial")]
         public IActionResult Update([FromBody] FilialDominio obj)
-        {
-            return Update(_appServico, obj);
-        }
+           => Update(_appServico, obj);
 
         [HttpDelete]
         [AllowAnonymous]
         [Route("api/AvaliacaoTaking/filial/{Id}")]
         public IActionResult Remove(int Id)
-        {
-            return Remove(_appServico, Id);
-        }
+          => Remove(_appServico, Id);
+
+        [HttpPatch]
+        [AllowAnonymous]
+        [Route("api/AvaliacaoTaking/filial/{Id}/cancela")]
+        public IActionResult Cancela(int Id)
+           => Cancela(_appServico, Id);
     }
 }

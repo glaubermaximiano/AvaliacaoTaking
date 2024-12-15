@@ -1,4 +1,3 @@
-G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\NLog.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\CoverletSourceRootsMapping_Taking.Aplicacao.Teste
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\testhost.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\testhost.exe
@@ -20,6 +19,7 @@ G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Microsoft.Test
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Moq.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\Newtonsoft.Json.dll
+G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\NLog.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\NuGet.Frameworks.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
 G:\AvaliacaoTaking\Taking\Taking.Aplicacao.Teste\bin\Debug\net8.0\xunit.abstractions.dll

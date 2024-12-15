@@ -121,5 +121,35 @@ namespace Taking.Aplicacao.Servico
                 throw new Exception(msgErro);
             }
         }
+
+        public string Cancela(int id)
+        {
+            try
+            {
+                var _objCliente = _servico.BuscaPorId(id);
+
+                if (_objCliente == null)
+                {
+                    return "Cliente não encontrado!";
+                }
+
+                if (_objCliente.IdcSituacao == "I")
+                {
+                    return "Cliente já cancelado!";
+                }
+
+                _servico.Cancela(id);
+
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                var msgErro = "ERRO " + GetType().Name + "." + MethodBase.GetCurrentMethod() + "(): " + ex.Message;
+
+                TrataErro(msgErro);
+
+                throw new Exception(msgErro);
+            }
+        }
     }
 }

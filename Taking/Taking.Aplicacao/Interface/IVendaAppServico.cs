@@ -4,11 +4,11 @@ using Taking.Dominio.Response;
 
 namespace Taking.Aplicacao.Interface
 {
-    public interface IVendaAppServico
+    public interface IVendaAppServico: ICancelaAppServico
     {
         List<VendaResponse> BuscaPorData(DateTime dataInico, DateTime dataFim);
 
-        VendaResponse BuscaPeloCodigo(string codVenda);
+        VendaResponse BuscaPeloCodigo(int codVenda);
 
         int Add(VendaRequest obj);
     }

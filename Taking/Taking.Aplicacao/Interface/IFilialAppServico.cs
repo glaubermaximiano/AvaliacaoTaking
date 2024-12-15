@@ -8,6 +8,7 @@ namespace Taking.Aplicacao.Interface
                                             IBuscaPorId<FilialDominio>,
                                             IAppServiceAdd<FilialDominio>,
                                             IAppServiceUpdate<FilialDominio>,
+                                            ICancelaAppServico,
                                             IAppServiceRemove
     {
     }

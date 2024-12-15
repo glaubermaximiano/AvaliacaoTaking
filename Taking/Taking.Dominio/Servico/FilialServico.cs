@@ -59,5 +59,19 @@ namespace Taking.Dominio.Servico
                 throw new Exception("ERRO " + GetType().Name + "." + MethodBase.GetCurrentMethod() + "(): " + ex.Message);
             }
         }
+
+        public string Cancela(int id)
+        {
+            try
+            {
+                _repositorio.Filial.Cancela(id);
+
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO " + GetType().Name + "." + MethodBase.GetCurrentMethod() + "(): " + ex.Message);
+            }
+        }
     }
 }

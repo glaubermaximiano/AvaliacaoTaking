@@ -80,6 +80,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Taking.WebApi.Controllers.ClienteController",
+    "Method": "Cancela",
+    "RelativePath": "api/AvaliacaoTaking/cliente/{Id}/cancela",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Taking.WebApi.Controllers.FilialController",
     "Method": "ListaTodos",
     "RelativePath": "api/AvaliacaoTaking/filial",
@@ -160,6 +176,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Taking.WebApi.Controllers.FilialController",
+    "Method": "Cancela",
+    "RelativePath": "api/AvaliacaoTaking/filial/{Id}/cancela",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Taking.WebApi.Controllers.ProdutoController",
     "Method": "ListaTodos",
     "RelativePath": "api/AvaliacaoTaking/produto",
@@ -228,6 +260,22 @@
     "Method": "Remove",
     "RelativePath": "api/AvaliacaoTaking/produto/{Id}",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.ProdutoController",
+    "Method": "Cancela",
+    "RelativePath": "api/AvaliacaoTaking/produto/{Id}/cancela",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -273,7 +321,7 @@
   },
   {
     "ContainingType": "Taking.WebApi.Controllers.VendaController",
-    "Method": "BuscaPorCodigo",
+    "Method": "BuscaPeloCodigo",
     "RelativePath": "api/AvaliacaoTaking/venda/{CodVenda}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -281,7 +329,44 @@
     "Parameters": [
       {
         "Name": "CodVenda",
-        "Type": "System.String",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.VendaController",
+    "Method": "Cancela",
+    "RelativePath": "api/AvaliacaoTaking/venda/{CodVenda}/cancela",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CodVenda",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taking.WebApi.Controllers.VendaController",
+    "Method": "CancelaItem",
+    "RelativePath": "api/AvaliacaoTaking/venda/{CodVenda}/cancela/{IdItemVenda}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CodVenda",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "IdItemVenda",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
